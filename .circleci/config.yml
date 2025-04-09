@@ -16,7 +16,7 @@ jobs:
       - run:
           name: Install pnpm package manager
           command: |
-            corepack enable
+            npm i -g corepack
             corepack prepare pnpm@latest-9 --activate
             pnpm config set store-dir .pnpm-store
       - run:
